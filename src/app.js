@@ -26,8 +26,20 @@ window.onload = function() {
           document.getElementById("palo1").style.color = "black";
           document.getElementById("palo2").style.color = "black";
       }
-  }
+      // modifica el ancho y largo de la carta
+      const width = document.getElementById("width").value;
+      const height = document.getElementById("height").value;
+
+      document.getElementById("card").style.width = width + "px";
+document.getElementById("card").style.height = height + "px";
+
+    }
 
   generateCard(); // Generar la carta al cargar la página
+  
+  // cambiar carta cada 10 segundos
+  document.getElementById("nuevo-carta").addEventListener("click", generateCard);
+  setInterval(generateCard, 10000);
+
 
 };

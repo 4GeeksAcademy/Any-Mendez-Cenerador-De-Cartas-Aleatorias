@@ -1,39 +1,46 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Generador de Cartas Aleatorias</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-  
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generador de Cartas Aleatorias</title>
+
+  <!-- Fontawesome is our recomended library for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Write your HTML code here, you can delete everything withing the body tags -->
+
   <div class="container">
-    <div class="d-flex align-items-center justify-content-center vh-100">
-    <div class="card">
-      <div class="card-top">
-        <span class="palo-arriba" id="palo1">♥</span>
-      </div>
-      <div class="card-middle">
-        <span class="valor" id="valor">3</span>
-      </div>
-      <div class="card-bottom">
-        <span class="palo-abajo" id="palo2">♥</span>
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="card" id="card">
+        <div class="card-top">
+          <span class="palo-arriba" id="palo1">♥</span>
+        </div>
+        <div class="card-middle">
+          <span class="valor" id="valor">3</span>
+        </div>
+        <div class="card-bottom">
+          <span class="palo-abajo" id="palo2">♥</span>
+        </div>
       </div>
     </div>
-  </div>
+    <!-- Div de botón para cambiar de carta y botones para modificar ancho y largo -->
+    <div class="d-flex align-items-center justify-content-center">
+      <button class="button d-flex align-items-center justify-content-center m-auto" id="nuevo-carta">Click para 1 carta más</button>
+      <label for="width"><strong>Ancho:</strong></label>
+      <input type="text" id="width" value="250">
+      <label for="height"><strong>Alto:</strong></label>
+      <input type="text" id="height" value="400">
+      </div>
   </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+  <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
+  <script type="module" src="/app.js"></script>
+</body>
+
 </html>
