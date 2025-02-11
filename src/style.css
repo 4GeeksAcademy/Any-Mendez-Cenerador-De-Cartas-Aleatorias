@@ -1,5 +1,35 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: blue;
+    background: green;
+}
+
+.card{
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.valor{
+    font-size: 80px;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    font-weight: bold;
+}
+
+.palo-arriba{
+    font-size: 80px;
+    margin: 0px 150px 100px 5px;
+}
+
+.palo-abajo{
+    font-size: 80px;
+    margin: 0px 5px 100px 150px;
 }
